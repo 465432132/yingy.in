@@ -1,0 +1,598 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 去掉滚过条 */
+body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* 全部 */
+#bon{
+	width: 1920px;
+	height: 3058px;
+}
+
+/* 导航 */
+.title{
+	position:absolute;
+	z-index: 2;
+	top:0;
+	width: 1920px;
+	height:120px;
+	background: rgb(0,0,0,0.2);
+}
+
+.title2{
+	width: 1350px;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title2 .logo{
+	width: 220px;
+	height: 43px;
+	position: absolute;
+	top:40px;
+}
+
+.title2 .subMenu{
+	position: absolute;
+	left:508px;	
+	width: 730px;
+	height: 120px;
+}
+
+.title2 .subMenu ul{
+	list-style: none;
+}
+
+.title2 .subMenu ul li{
+	width: 144px;
+	height: 120px;
+	text-align: center;
+	float: left;
+	color: #fff;
+	font-size: 20px;
+	line-height: 120px;
+	cursor:pointer;
+}
+
+.title2 .subMenu ul li:hover{
+	color: #b4b4b4;
+	transition: 1s;
+}
+
+.title2 .search{
+	position: absolute;
+	right: 0;
+	top: 45px;
+}
+
+/* bannr */
+.bannr{
+	width: 1920px;
+	height: 1278px;
+	position: relative;
+	z-index: 0;
+}
+
+.bannr .biaoti{
+	width: 594px;
+	height: 341px;
+	position: absolute;
+	z-index: 1;
+	top: 358px;
+	left: 645px;
+	cursor: pointer;
+}
+
+.bannr .gif{
+	width: 42px;
+	height: 136px;
+	position: absolute;
+	top: 906px;
+	left: 939px;
+	z-index: 2;
+	-webkit-animation: bt 2s infinite;
+	        animation: bt 2s infinite;
+	cursor: pointer;
+}
+
+@-webkit-keyframes bt
+{
+0%   {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+50%  {-webkit-transform: translate(0px,5px);transform: translate(0px,5px);}
+100% {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+}
+
+@keyframes bt
+{
+0%   {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+50%  {-webkit-transform: translate(0px,5px);transform: translate(0px,5px);}
+100% {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+}
+
+
+/* 第二块 */
+.service{
+	width: 1920px;
+	/* height: 3058px; */
+	/* background: red; */
+	margin-top: 30px;
+	position: relative;
+}
+
+.service .servie1{
+	width: 1210px;
+	height: 600px;
+	position: absolute;
+	z-index: 0;
+	left: 354px;
+}
+
+.service .servie1 .tu1{
+	position: absolute;
+	left: -100px;
+	-webkit-animation: btn 1.5s infinite;
+	        animation: btn 1.5s infinite;
+	cursor: pointer;
+}
+
+@-webkit-keyframes btn
+{
+0%   {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+50%  {-webkit-transform: translate(0px,8px);transform: translate(0px,8px);}
+100% {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+}
+
+@keyframes btn
+{
+0%   {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+50%  {-webkit-transform: translate(0px,8px);transform: translate(0px,8px);}
+100% {-webkit-transform: translate(0px,0px);transform: translate(0px,0px);}
+}
+
+.service .servie1 .tu2{
+	position: absolute;
+	right: -72px;
+	bottom: -50px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+      }
+    100%{
+    	transform:rotate(360deg);
+    }
+	}
+ 
+.rotate{
+    transition: 10s;
+    animation: rotate 100s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+}
+
+.service .servie1 .about{
+	width: 1210px;
+	height: 525px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	position: absolute;
+	top:74px;
+	z-index: -1;
+	box-shadow: -4px -3px 28px;
+}
+
+.service .servie1 .about .tu3{
+	position:absolute;
+	top: 55px;
+	left: 63px;
+}
+
+.service .servie1 .about .dianji{
+	width: 242px;
+	height: 40px;
+	background: #000;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 76px;
+	left: 464px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.service .servie1 .about .dianji:hover{
+	background: #b0b0b0;
+}
+
+.service .servie1 .about .dianji:hover p{
+	color:#000;
+}
+
+.service .servie1 .about .dianji p{
+	line-height: 40px;
+	color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.canp{
+	width: 1920px;
+	height: 982px;
+	position: absolute;
+	top: 1673px;
+	z-index: -2;
+	background: url(../img/chanping.jpg);
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.canp .zi{
+	width: 1920px;
+	height: 982px;
+}
+
+.canp .zi h1{
+	text-align: center;
+	line-height: 950px;
+	font-size: 55px;
+	color: #FFFFFF;
+}
+
+.canp .zi h2{
+	font-size: 30px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 520px;
+	left: 902px;
+}
+
+.service .zhans{
+	width: 1210px;
+	height: 798px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	position: absolute;
+	top: 950px;
+	left:354px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.service .zhans .ziti{
+	position: absolute;
+	top: 59px;
+	left: 57px;
+}
+
+.service .zhans .w{
+	width: 403px;
+	height: 417px;
+	position: absolute;
+	top: 396px;
+	left: 0;
+	overflow: hidden; 
+	cursor: pointer;
+}
+
+.service .zhans .w:hover .chaoren{
+	transform: scale(1.1);
+	transition: all 1s; 
+	opacity: 0.8;
+}
+
+.service .zhans .chaoren{
+	position: absolute;
+	bottom: 14px;
+	left: -1px;
+	transition: all 1s; 
+}
+
+.service .zhans .tianying{
+	transition: all 1s;
+}
+
+.service .zhans .e{
+	position: absolute;
+	right: -3px;
+	bottom: -1px;
+	width: 403px;
+	height: 404px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.service .zhans .e:hover .tianying{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.service .zhans .chaozi{
+	width: 410px;
+	transition: all 1s;
+ } 
+
+.service .zhans .q{
+	position: absolute;
+	top: -7px;
+	left: 402px;
+	width: 409px;
+	height: 403px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.service .zhans .q:hover .chaozi{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+
+
+
+
+
+/* 第二大块 */
+.bon2{
+	width: 1920px;
+	height: 984px;
+	position: relative;
+}
+
+.bon2 .shouzhi{
+	width: 1920px;
+	height: 984px;
+	background: url(../img/shouzhi.jpg) no-repeat;
+	position:absolute;
+	top:-114px;
+	background-attachment: fixed;
+}
+
+.bon2 .shouzhi .dianji2{
+	width: 242px;
+	height: 40px;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	top: 223px;
+	left: 830px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.bon2 .shouzhi .dianji2:hover{
+	background: #000;
+}
+
+.bon2 .shouzhi .dianji2:hover p{
+	color:#fff;
+}
+
+.bon2 .shouzhi .dianji2 p{
+	line-height: 40px;
+	color: #000;
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.bon2 .zi2{
+	width: 1920px;
+	height: 982px;
+}
+
+.bon2 .zi2 h1{
+	text-align: center;
+	line-height: 1025px;
+	font-size: 55px;
+	color: #FFFFFF;
+}
+
+.bon2 .zi2 h2{
+	font-size: 30px;
+	color: #FFFFFF;
+	position: absolute;
+	z-index: 1;
+	top: 555px;
+	left: 902px;
+}
+
+
+
+
+.bon2 .news{
+	width: 75.625rem;
+	height: 53.75rem;
+	background: #FFFFFF;
+	position: absolute;
+	top: 32.5rem;
+	left: 21.875rem;
+	border-radius: 10px;
+	box-shadow: 0px -4px 28px;
+	z-index: 1;
+}
+
+.border{
+	width: 242px;
+	height: 40px;
+	border: #000000 solid 2px;
+	border-radius: 20px;
+	display: flex;
+	margin: 100px auto 0 auto;
+	overflow: hidden;
+}
+
+ .news2{
+	color: #000;
+	flex: 1;
+	line-height: 40px;
+	text-align: center;
+	height: 100%;
+	cursor: pointer;
+}
+
+.news .background {
+	color: #fff;
+	background: #000000;
+}
+
+.bod1{
+	width: 1134px;
+	height: 634px;
+	margin: 30px 0 0 35px;
+	position: relative;
+}
+
+.bod1 img{
+	width: 568px;
+}
+
+.bod2{
+	width: 1134px;
+	height: 634px;
+	display: none;
+	background: salmon;
+	margin: 30px 0 0 35px;
+}
+ 
+ .bod1 .kuai{
+	 width: 400px;
+	 height: 200px;
+	 background: red;
+	 position: absolute;
+	 left: 0;
+ }
+ 
+ .bod1 .kuai2{
+ 	 width: 550px;
+ 	 height: 200px;
+	 position: absolute;
+	 left: 0;
+	 bottom: 100px;
+ }
+ 
+ .bod1 .kuai2 .block1{
+ 	width: 40px;
+ 	height: 8px;
+ 	background: #000;
+ 	margin-bottom: 10px;
+ }
+ 
+ .bod1 .kuai2 h3{
+  	margin-bottom: 20px;
+  }
+ 
+ .bod1 .kuai3{
+ 	width: 529px;
+	height: 277px;
+	position: absolute;
+	right: 0px;
+	top: 0;
+ }
+ 
+ .bod1 .kuai3 .block{
+ 	width: 40px;
+ 	height: 8px;
+ 	background: #000;
+	margin-bottom: 10px;
+ }
+ 
+.bod1 .kuai3 h3{
+ 	margin-bottom: 20px;
+ }
+ 
+ .bod1 .kuai4{
+ 	 width: 400px;
+ 	 height: 200px;
+	 position: absolute;
+	 bottom: 145px;
+	 right: 166px;
+}
+
+.bod1 .see{
+	width: 242px;
+	height: 40px;
+	background: #000000;
+	border-radius: 8px;
+	position: absolute;
+	top: 600px;
+	left: 39%;
+	color:#FFFFFF;
+	line-height: 40px;
+	text-align: center;
+	transition: all 1s;
+	 cursor: pointer;
+}
+
+.bod1 .see:hover{
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.bon3{
+	width: 1920px;
+	height: 1010px;
+	position: relative;
+}
+
+.bon3 .consult{
+	width: 1022px;
+	height: 335px;
+	position: absolute;
+	top: 476px;
+	left: 448px;
+	font-size: 55px;
+	text-align: center;
+	color: #FFFFFF;
+	list-style: none;
+	font-weight: bold;
+}
+
+.bon3 .consult>li{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.bon3 .consult .heng{
+	width: 1022px;
+	height: 60px;
+	float: left;
+	display: flex;
+	flex-direction: row ;
+	justify-content:space-around;
+	margin-top: 30px;
+}
+
+.bon3 .consult .heng li{
+	width: 321px;
+	height: 60px;
+	background: #FFFFFF;
+	color: #B4B4B4;
+	font-size: 16px;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.bon3 .consult .refer{
+	width: 321px;
+	height: 60px;
+	background: linear-gradient(180deg, #464545 18%, #0b0a0a 100%);
+	position: absolute;
+	top: 254px;
+	left: 351px;
+	font-size: 17px;
+	line-height: 52px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.bon3 .consult .refer:hover{
+	background: rgb(77,3,3,0.9);
+}
